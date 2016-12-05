@@ -31,7 +31,7 @@
  }
 
  .point {
-     position: absolute;
+     position: relative;
      padding: 3rem;
      text-align: center;
      opacity: 1;
