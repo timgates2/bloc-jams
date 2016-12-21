@@ -89,4 +89,4 @@ var albumPicasso = {
              this.children[0].innerHTML = this.children[0].getAttribute('data-song-number');
          });
      }
- };
+ };  
