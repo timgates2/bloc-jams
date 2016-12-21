@@ -74,6 +74,11 @@ var albumPicasso = {
            }
            return currentParent;
       }
+      if (currentParent.className != null) {
+           alert("No parent found.");
+      } else if (currentParent.className == true) {
+           alert("No parent found with that class name")
+      }
  };
  
  var getSongItem = function(element) {
