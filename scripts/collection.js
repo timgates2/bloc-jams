@@ -21,8 +21,8 @@ var buildCollectionItemTemplate = function() {
 
 $(window).onload = function() {
     var $collectionContainer = $('.album-covers');
+    $collectionContainer.empty();
 
-    
     for (var i = 0; i< 12; i++) {
         var $newThumbnail = buildCollectionItemTemplate();
          // #5

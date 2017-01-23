@@ -6,7 +6,7 @@
              transform: 'scaleX(1) translateY(o)'
          });
      };
- $.each($('.point'), revealPoint)
+ $.each($('.point'), revealPoint);
  };
 
  $(window).load(function() {
