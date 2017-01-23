@@ -41,9 +41,12 @@ var createSongRow = function(songNumber, songName, songLength) {
 		// Switch from Play -> Pause button to indicate new song is playing.
 		$(this).html(pauseButtonTemplate);
 		currentlyPlayingSongNumber = songNumber;
+        currentSongFromAlbum = currentAlbum.songs[songNumber - 1];
+        updatePlayerBarSong();
 	} else if (currentlyPlayingSongNumber === songNumber) {
 		// Switch from Pause -> Play button to pause currently playing song.
 		$(this).html(playButtonTemplate);
+        $('.main-controls .play-pause').html(playerBarPlayButton);
 		currentlyPlayingSongNumber = null;
 	}
 };
