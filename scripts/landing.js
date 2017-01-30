@@ -1,16 +1,14 @@
  var animatePoints = function() {
-     
      var revealPoint = function() {
          $(this).css( {
              opacity: 1,
              transform: 'scaleX(1) translateY(o)'
          });
      };
- $.each($('.point'), revealPoint);
+     $.each($('.point'), revealPoint);
  };
 
  $(window).load(function() {
-     // Automatically animate the points on a tall screen where scrolling can't trigger the animation
      if ($(window).height() > 950) {
          animatePoints();
      }
